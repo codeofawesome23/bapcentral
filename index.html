@@ -66,7 +66,7 @@
 <ul class="navbar-nav site-nav align-items-center m-auto d-none d-lg-flex">
 <div class="theme-two-header__nav-wrapper">
 <a class="theme-two-header__site-title site-title logo-size--small" href="/">
-<img class="logo__img" src="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png" ahref="taylorshots.com">
+<img class="logo__img" src="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png" >
 </a>
 <div class="theme-two-header__left-side-nav align-items-center">
 <li class="nav-item">
@@ -157,7 +157,12 @@ About
 <div class="col-10 col-lg-8 max-w-900">
 <h1 class="theme-two-header__title hero-text">TAYLOR SHOTS</h1>
 <p class="theme-two-header__subtitle subtitle">The perfect shot, tailored to you</p>
-<a class="theme-two-header__button button button--overlay button--size_md" href="https://calendly.com/tsmedia" target="_blank">book now</a>
+<a class="theme-two-header__button button button--overlay button--size_md" onclick="Calendly.showPopupWidget('https://calendly.com/tsmedia');return false;"
+>book now</a>
+<!-- Calendly link widget begin -->
+<link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<!-- Calendly link widget end -->
 </div>
 </div>
 </div>
