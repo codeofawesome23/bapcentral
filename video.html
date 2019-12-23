@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)https://taylorshots.mypixieset.com/video/ -->
-<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style>
-
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<script type="text/javascript" src="./video_files/2131890c87"></script><script src="./video_files/nr-1071.min.js"></script><script type="text/javascript" async="" src="./video_files/analytics.js"></script><script src="./video_files/player(1).js"></script><script>
+<script>
 	window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);
 	;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2131890c87",applicationID:"141214085",sa:1}
 	</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39686919-1"></script>
 <script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -15,484 +16,43 @@
 
 		gtag('config', 'UA-39686919-1', { 'allow_display_features': false });
 			</script>
-<meta name="generator" content="Pixieset">
-
+<meta name="generator" content="Pixieset" />
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="csrf-token" content="wOBwo6DNK9Hs1O9Nfe1VttnBPw7L2sz5PgzZNPlK">
+<meta name="csrf-token" content="YHPnw46bVc0bk00dJKHTvw3oSY0h10eiilS7oCc2" />
 <title>Video - Taylor Shots</title>
-<style type="text/css">svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-  overflow: visible;
-  vertical-align: -0.125em;
-}
-.svg-inline--fa.fa-lg {
-  vertical-align: -0.225em;
-}
-.svg-inline--fa.fa-w-1 {
-  width: 0.0625em;
-}
-.svg-inline--fa.fa-w-2 {
-  width: 0.125em;
-}
-.svg-inline--fa.fa-w-3 {
-  width: 0.1875em;
-}
-.svg-inline--fa.fa-w-4 {
-  width: 0.25em;
-}
-.svg-inline--fa.fa-w-5 {
-  width: 0.3125em;
-}
-.svg-inline--fa.fa-w-6 {
-  width: 0.375em;
-}
-.svg-inline--fa.fa-w-7 {
-  width: 0.4375em;
-}
-.svg-inline--fa.fa-w-8 {
-  width: 0.5em;
-}
-.svg-inline--fa.fa-w-9 {
-  width: 0.5625em;
-}
-.svg-inline--fa.fa-w-10 {
-  width: 0.625em;
-}
-.svg-inline--fa.fa-w-11 {
-  width: 0.6875em;
-}
-.svg-inline--fa.fa-w-12 {
-  width: 0.75em;
-}
-.svg-inline--fa.fa-w-13 {
-  width: 0.8125em;
-}
-.svg-inline--fa.fa-w-14 {
-  width: 0.875em;
-}
-.svg-inline--fa.fa-w-15 {
-  width: 0.9375em;
-}
-.svg-inline--fa.fa-w-16 {
-  width: 1em;
-}
-.svg-inline--fa.fa-w-17 {
-  width: 1.0625em;
-}
-.svg-inline--fa.fa-w-18 {
-  width: 1.125em;
-}
-.svg-inline--fa.fa-w-19 {
-  width: 1.1875em;
-}
-.svg-inline--fa.fa-w-20 {
-  width: 1.25em;
-}
-.svg-inline--fa.fa-pull-left {
-  margin-right: 0.3em;
-  width: auto;
-}
-.svg-inline--fa.fa-pull-right {
-  margin-left: 0.3em;
-  width: auto;
-}
-.svg-inline--fa.fa-border {
-  height: 1.5em;
-}
-.svg-inline--fa.fa-li {
-  width: 2em;
-}
-.svg-inline--fa.fa-fw {
-  width: 1.25em;
-}
-
-.fa-layers svg.svg-inline--fa {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.fa-layers {
-  display: inline-block;
-  height: 1em;
-  position: relative;
-  text-align: center;
-  vertical-align: -0.125em;
-  width: 1em;
-}
-.fa-layers svg.svg-inline--fa {
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-}
-
-.fa-layers-counter, .fa-layers-text {
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-}
-
-.fa-layers-text {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-}
-
-.fa-layers-counter {
-  background-color: #ff253a;
-  border-radius: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  height: 1.5em;
-  line-height: 1;
-  max-width: 5em;
-  min-width: 1.5em;
-  overflow: hidden;
-  padding: 0.25em;
-  right: 0;
-  text-overflow: ellipsis;
-  top: 0;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-
-.fa-layers-bottom-right {
-  bottom: 0;
-  right: 0;
-  top: auto;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-}
-
-.fa-layers-bottom-left {
-  bottom: 0;
-  left: 0;
-  right: auto;
-  top: auto;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-}
-
-.fa-layers-top-right {
-  right: 0;
-  top: 0;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-
-.fa-layers-top-left {
-  left: 0;
-  right: auto;
-  top: 0;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-
-.fa-lg {
-  font-size: 1.3333333333em;
-  line-height: 0.75em;
-  vertical-align: -0.0667em;
-}
-
-.fa-xs {
-  font-size: 0.75em;
-}
-
-.fa-sm {
-  font-size: 0.875em;
-}
-
-.fa-1x {
-  font-size: 1em;
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-.fa-3x {
-  font-size: 3em;
-}
-
-.fa-4x {
-  font-size: 4em;
-}
-
-.fa-5x {
-  font-size: 5em;
-}
-
-.fa-6x {
-  font-size: 6em;
-}
-
-.fa-7x {
-  font-size: 7em;
-}
-
-.fa-8x {
-  font-size: 8em;
-}
-
-.fa-9x {
-  font-size: 9em;
-}
-
-.fa-10x {
-  font-size: 10em;
-}
-
-.fa-fw {
-  text-align: center;
-  width: 1.25em;
-}
-
-.fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-.fa-ul > li {
-  position: relative;
-}
-
-.fa-li {
-  left: -2em;
-  position: absolute;
-  text-align: center;
-  width: 2em;
-  line-height: inherit;
-}
-
-.fa-border {
-  border: solid 0.08em #eee;
-  border-radius: 0.1em;
-  padding: 0.2em 0.25em 0.15em;
-}
-
-.fa-pull-left {
-  float: left;
-}
-
-.fa-pull-right {
-  float: right;
-}
-
-.fa.fa-pull-left,
-.fas.fa-pull-left,
-.far.fa-pull-left,
-.fal.fa-pull-left,
-.fab.fa-pull-left {
-  margin-right: 0.3em;
-}
-.fa.fa-pull-right,
-.fas.fa-pull-right,
-.far.fa-pull-right,
-.fal.fa-pull-right,
-.fab.fa-pull-right {
-  margin-left: 0.3em;
-}
-
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
-}
-
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-.fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-}
-
-.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
-}
-
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
-}
-
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical,
-:root .fa-flip-both {
-  -webkit-filter: none;
-          filter: none;
-}
-
-.fa-stack {
-  display: inline-block;
-  height: 2em;
-  position: relative;
-  width: 2.5em;
-}
-
-.fa-stack-1x,
-.fa-stack-2x {
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.svg-inline--fa.fa-stack-1x {
-  height: 1em;
-  width: 1.25em;
-}
-.svg-inline--fa.fa-stack-2x {
-  height: 2em;
-  width: 2.5em;
-}
-
-.fa-inverse {
-  color: #fff;
-}
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.sr-only-focusable:active, .sr-only-focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.svg-inline--fa .fa-primary {
-  fill: var(--fa-primary-color, currentColor);
-  opacity: 1;
-  opacity: var(--fa-primary-opacity, 1);
-}
-
-.svg-inline--fa .fa-secondary {
-  fill: var(--fa-secondary-color, currentColor);
-  opacity: 0.4;
-  opacity: var(--fa-secondary-opacity, 0.4);
-}
-
-.svg-inline--fa.fa-swap-opacity .fa-primary {
-  opacity: 0.4;
-  opacity: var(--fa-secondary-opacity, 0.4);
-}
-
-.svg-inline--fa.fa-swap-opacity .fa-secondary {
-  opacity: 1;
-  opacity: var(--fa-primary-opacity, 1);
-}
-
-.svg-inline--fa mask .fa-primary,
-.svg-inline--fa mask .fa-secondary {
-  fill: black;
-}
-
-.fad.fa-inverse {
-  color: #fff;
-}</style><link rel="shortcut icon" type="image/x-icon" href="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/59285f50ea032390ca395da51a79c9f83c1324dfeaf06b1eb8055e13ce6ae36e.png">
-<link rel="canonical" href="https://taylorshots.mypixieset.com/video/">
-<meta property="og:site_name" content="Taylor Shots">
-<meta property="og:title" content="Video - Taylor Shots">
-<meta property="og:url" content="https://taylorshots.mypixieset.com/video/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://d11spkgi1ge9lb.cloudfront.net/elementfield/23933001/monumentv-6641a6c7.jpg">
-<meta property="og:image:width" content="1500">
-<meta property="og:image:height" content="1000">
-<meta itemprop="name" content="Video - Taylor Shots">
-<meta itemprop="url" content="https://taylorshots.mypixieset.com/video/">
-<meta itemprop="thumbnailUrl" content="https://d11spkgi1ge9lb.cloudfront.net/elementfield/23933001/monumentv-6641a6c7.jpg">
-<meta name="twitter:title" content="Video - Taylor Shots">
-<meta name="twitter:image" content="https://d11spkgi1ge9lb.cloudfront.net/elementfield/23933001/monumentv-6641a6c7.jpg">
-<meta name="twitter:url" content="https://taylorshots.mypixieset.com/video/">
-<meta name="twitter:card" content="summary">
-<meta name="description" content="">
-
-<link href="/css/stylesheet.css" rel="stylesheet">
-<style type="text/css">/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp{display:none;position:absolute;width:100%;height:100%;left:0;top:0;overflow:hidden;-ms-touch-action:none;touch-action:none;z-index:1500;-webkit-text-size-adjust:100%;-webkit-backface-visibility:hidden;outline:none}.pswp *{-webkit-box-sizing:border-box;box-sizing:border-box}.pswp img{max-width:none}.pswp--animate_opacity{opacity:.001;will-change:opacity;-webkit-transition:opacity 333ms cubic-bezier(.4,0,.22,1);transition:opacity 333ms cubic-bezier(.4,0,.22,1)}.pswp--open{display:block}.pswp--zoom-allowed .pswp__img{cursor:-webkit-zoom-in;cursor:-moz-zoom-in;cursor:zoom-in}.pswp--zoomed-in .pswp__img{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.pswp--dragging .pswp__img{cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.pswp__bg{background:#000;opacity:0;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden}.pswp__bg,.pswp__scroll-wrap{position:absolute;left:0;top:0;width:100%;height:100%}.pswp__scroll-wrap{overflow:hidden}.pswp__container,.pswp__zoom-wrap{-ms-touch-action:none;touch-action:none;position:absolute;left:0;right:0;top:0;bottom:0}.pswp__container,.pswp__img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}.pswp__zoom-wrap{position:absolute;width:100%;-webkit-transform-origin:left top;-ms-transform-origin:left top;transform-origin:left top;-webkit-transition:-webkit-transform 333ms cubic-bezier(.4,0,.22,1);transition:transform 333ms cubic-bezier(.4,0,.22,1)}.pswp__bg{will-change:opacity;-webkit-transition:opacity 333ms cubic-bezier(.4,0,.22,1);transition:opacity 333ms cubic-bezier(.4,0,.22,1)}.pswp--animated-in .pswp__bg,.pswp--animated-in .pswp__zoom-wrap{-webkit-transition:none;transition:none}.pswp__container,.pswp__zoom-wrap{-webkit-backface-visibility:hidden}.pswp__item{right:0;bottom:0;overflow:hidden}.pswp__img,.pswp__item{position:absolute;left:0;top:0}.pswp__img{width:auto;height:auto}.pswp__img--placeholder{-webkit-backface-visibility:hidden}.pswp__img--placeholder--blank{background:#222}.pswp--ie .pswp__img{width:100%!important;height:auto!important;left:0;top:0}.pswp__error-msg{position:absolute;left:0;top:50%;width:100%;text-align:center;font-size:14px;line-height:16px;margin-top:-8px;color:#ccc}.pswp__error-msg a{color:#ccc;text-decoration:underline}</style><style type="text/css">/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */.pswp__button{width:44px;height:44px;position:relative;background:none;cursor:pointer;overflow:visible;-webkit-appearance:none;display:block;border:0;padding:0;margin:0;float:right;opacity:.75;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-box-shadow:none;box-shadow:none}.pswp__button:focus,.pswp__button:hover{opacity:1}.pswp__button:active{outline:none;opacity:.9}.pswp__button::-moz-focus-inner{padding:0;border:0}.pswp__ui--over-close .pswp__button--close{opacity:1}.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{background:url(https://d2vw2j0fzp6c9l.cloudfront.net/images/assets/client/images/vendor/photoswipe/dist/default-skin/default-skin.png?e3f799c6dec9af194c86decdf7392405) 0 0 no-repeat;background-size:264px 88px;width:44px;height:44px}@media (-webkit-min-device-pixel-ratio:1.1),(-webkit-min-device-pixel-ratio:1.09375),(min-resolution:1.1dppx),(min-resolution:105dpi){.pswp--svg .pswp__button,.pswp--svg .pswp__button--arrow--left:before,.pswp--svg .pswp__button--arrow--right:before{background-image:url(https://d2vw2j0fzp6c9l.cloudfront.net/images/assets/client/images/vendor/photoswipe/dist/default-skin/default-skin.svg?4c8cdc3fb786f4c8f92ba39cdf40385f)}.pswp--svg .pswp__button--arrow--left,.pswp--svg .pswp__button--arrow--right{background:none}}.pswp__button--close{background-position:0 -44px}.pswp__button--share{background-position:-44px -44px}.pswp__button--fs{display:none}.pswp--supports-fs .pswp__button--fs{display:block}.pswp--fs .pswp__button--fs{background-position:-44px 0}.pswp__button--zoom{display:none;background-position:-88px 0}.pswp--zoom-allowed .pswp__button--zoom{display:block}.pswp--zoomed-in .pswp__button--zoom{background-position:-132px 0}.pswp--touch .pswp__button--arrow--left,.pswp--touch .pswp__button--arrow--right{visibility:hidden}.pswp__button--arrow--left,.pswp__button--arrow--right{background:none;top:50%;margin-top:-50px;width:70px;height:100px;position:absolute}.pswp__button--arrow--left{left:0}.pswp__button--arrow--right{right:0}.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{content:"";top:35px;background-color:rgba(0,0,0,.3);height:30px;width:32px;position:absolute}.pswp__button--arrow--left:before{left:6px;background-position:-138px -44px}.pswp__button--arrow--right:before{right:6px;background-position:-94px -44px}.pswp__counter,.pswp__share-modal{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.pswp__share-modal{display:block;background:rgba(0,0,0,.5);width:100%;height:100%;top:0;left:0;padding:10px;position:absolute;z-index:1600;opacity:0;-webkit-transition:opacity .25s ease-out;transition:opacity .25s ease-out;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__share-modal--hidden{display:none}.pswp__share-tooltip{z-index:1620;position:absolute;background:#fff;top:56px;border-radius:2px;display:block;width:auto;right:44px;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.25);box-shadow:0 2px 5px rgba(0,0,0,.25);-webkit-transform:translateY(6px);-ms-transform:translateY(6px);transform:translateY(6px);-webkit-transition:-webkit-transform .25s;transition:transform .25s;-webkit-backface-visibility:hidden;will-change:transform}.pswp__share-tooltip a{display:block;padding:8px 12px;font-size:14px;line-height:18px}.pswp__share-tooltip a,.pswp__share-tooltip a:hover{color:#000;text-decoration:none}.pswp__share-tooltip a:first-child{border-radius:2px 2px 0 0}.pswp__share-tooltip a:last-child{border-radius:0 0 2px 2px}.pswp__share-modal--fade-in{opacity:1}.pswp__share-modal--fade-in .pswp__share-tooltip{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}.pswp--touch .pswp__share-tooltip a{padding:16px 12px}a.pswp__share--facebook:before{content:"";display:block;width:0;height:0;position:absolute;top:-12px;right:15px;border:6px solid transparent;border-bottom-color:#fff;-webkit-pointer-events:none;-moz-pointer-events:none;pointer-events:none}a.pswp__share--facebook:hover{background:#3e5c9a;color:#fff}a.pswp__share--facebook:hover:before{border-bottom-color:#3e5c9a}a.pswp__share--twitter:hover{background:#55acee;color:#fff}a.pswp__share--pinterest:hover{background:#ccc;color:#ce272d}a.pswp__share--download:hover{background:#ddd}.pswp__counter{position:absolute;left:0;top:0;height:44px;font-size:13px;line-height:44px;color:#fff;opacity:.75;padding:0 10px}.pswp__caption{position:absolute;left:0;bottom:0;width:100%;min-height:44px}.pswp__caption small{font-size:11px;color:#bbb}.pswp__caption__center{text-align:left;max-width:420px;margin:0 auto;font-size:13px;padding:10px;line-height:20px;color:#ccc}.pswp__caption--empty{display:none}.pswp__caption--fake{visibility:hidden}.pswp__preloader{width:44px;height:44px;position:absolute;top:0;left:50%;margin-left:-22px;opacity:0;-webkit-transition:opacity .25s ease-out;transition:opacity .25s ease-out;will-change:opacity;direction:ltr}.pswp__preloader__icn{width:20px;height:20px;margin:12px}.pswp__preloader--active{opacity:1}.pswp__preloader--active .pswp__preloader__icn{background:url(https://d2vw2j0fzp6c9l.cloudfront.net/images/assets/client/images/vendor/photoswipe/dist/default-skin/preloader.gif?e34aafbb485a96eaf2a789b2bf3af6fe) 0 0 no-repeat}.pswp--css_animation .pswp__preloader--active{opacity:1}.pswp--css_animation .pswp__preloader--active .pswp__preloader__icn{-webkit-animation:clockwise .5s linear infinite;animation:clockwise .5s linear infinite}.pswp--css_animation .pswp__preloader--active .pswp__preloader__donut{-webkit-animation:donut-rotate 1s cubic-bezier(.4,0,.22,1) infinite;animation:donut-rotate 1s cubic-bezier(.4,0,.22,1) infinite}.pswp--css_animation .pswp__preloader__icn{background:none;opacity:.75;width:14px;height:14px;position:absolute;left:15px;top:15px;margin:0}.pswp--css_animation .pswp__preloader__cut{position:relative;width:7px;height:14px;overflow:hidden}.pswp--css_animation .pswp__preloader__donut{-webkit-box-sizing:border-box;box-sizing:border-box;width:14px;height:14px;border:2px solid #fff;border-radius:50%;border-left-color:transparent;border-bottom-color:transparent;position:absolute;top:0;left:0;background:none;margin:0}@media screen and (max-width:1024px){.pswp__preloader{position:relative;left:auto;top:auto;margin:0;float:right}}@-webkit-keyframes clockwise{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes clockwise{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes donut-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}50%{-webkit-transform:rotate(-140deg);transform:rotate(-140deg)}to{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes donut-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}50%{-webkit-transform:rotate(-140deg);transform:rotate(-140deg)}to{-webkit-transform:rotate(0);transform:rotate(0)}}.pswp__ui{-webkit-font-smoothing:auto;visibility:visible;opacity:1;z-index:1550}.pswp__top-bar{position:absolute;left:0;top:0;height:44px;width:100%}.pswp--has_mouse .pswp__button--arrow--left,.pswp--has_mouse .pswp__button--arrow--right,.pswp__caption,.pswp__top-bar{-webkit-backface-visibility:hidden;will-change:opacity;-webkit-transition:opacity 333ms cubic-bezier(.4,0,.22,1);transition:opacity 333ms cubic-bezier(.4,0,.22,1)}.pswp--has_mouse .pswp__button--arrow--left,.pswp--has_mouse .pswp__button--arrow--right{visibility:visible}.pswp__caption,.pswp__top-bar{background-color:rgba(0,0,0,.5)}.pswp__ui--fit .pswp__caption,.pswp__ui--fit .pswp__top-bar{background-color:rgba(0,0,0,.3)}.pswp__ui--idle .pswp__button--arrow--left,.pswp__ui--idle .pswp__button--arrow--right,.pswp__ui--idle .pswp__top-bar{opacity:0}.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__top-bar{opacity:.001}.pswp__ui--one-slide .pswp__button--arrow--left,.pswp__ui--one-slide .pswp__button--arrow--right,.pswp__ui--one-slide .pswp__counter{display:none}.pswp__element--disabled{display:none!important}.pswp--minimal--dark .pswp__top-bar{background:none}</style></head>
-<body class="theme-theme2" style=""><div hidden="" id="sprite-plyr"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg"><symbol id="plyr-captions-off" viewBox="0 0 18 18"><path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd" fill-opacity=".5"></path></symbol><symbol id="plyr-captions-on" viewBox="0 0 18 18"><path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd"></path></symbol><symbol id="plyr-enter-fullscreen" viewBox="0 0 18 18"><path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z"></path></symbol><symbol id="plyr-exit-fullscreen" viewBox="0 0 18 18"><path d="M1 12h3.6l-4 4L2 17.4l4-4V17h2v-7H1zM16 .6l-4 4V1h-2v7h7V6h-3.6l4-4z"></path></symbol><symbol id="plyr-fast-forward" viewBox="0 0 18 18"><path d="M7.875 7.171L0 1v16l7.875-6.171V17L18 9 7.875 1z"></path></symbol><symbol id="plyr-muted" viewBox="0 0 18 18"><path d="M12.4 12.5l2.1-2.1 2.1 2.1 1.4-1.4L15.9 9 18 6.9l-1.4-1.4-2.1 2.1-2.1-2.1L11 6.9 13.1 9 11 11.1zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol><symbol id="plyr-pause" viewBox="0 0 18 18"><path d="M6 1H3c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zM12 1c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1h-3z"></path></symbol><symbol id="plyr-play" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225C3.052-.337 2 .225 2 1.125v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></symbol><symbol id="plyr-restart" viewBox="0 0 18 18"><path d="M9.7 1.2l.7 6.4 2.1-2.1c1.9 1.9 1.9 5.1 0 7-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.6-.5-3.5-1.5-1.9-1.9-1.9-5.1 0-7 .6-.6 1.4-1.1 2.3-1.3l-.6-1.9C6 2.6 4.9 3.2 4 4.1 1.3 6.8 1.3 11.2 4 14c1.3 1.3 3.1 2 4.9 2 1.9 0 3.6-.7 4.9-2 2.7-2.7 2.7-7.1 0-9.9L16 1.9l-6.3-.7z"></path></symbol><symbol id="plyr-rewind" viewBox="0 0 18 18"><path d="M10.125 1L0 9l10.125 8v-6.171L18 17V1l-7.875 6.171z"></path></symbol><symbol id="plyr-volume" viewBox="0 0 18 18"><path d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z"></path><path d="M11.282 5.282a.909.909 0 0 0 0 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 0 0 0 1.316c.145.145.636.262 1.018.156a.725.725 0 0 0 .298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 0 0-1.316 0zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol></svg></div>
+<link rel="shortcut icon" type="image/x-icon" href="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/59285f50ea032390ca395da51a79c9f83c1324dfeaf06b1eb8055e13ce6ae36e.png">
+<link rel="canonical" href="https://taylorshots.mypixieset.com/video/" />
+<meta property="og:site_name" content="Taylor Shots" />
+<meta property="og:title" content="Video - Taylor Shots" />
+<meta property="og:url" content="https://taylorshots.mypixieset.com/video/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://d11spkgi1ge9lb.cloudfront.net/elementfield/23933001/monumentv-6641a6c7.jpg" />
+<meta property="og:image:width" content="1500" />
+<meta property="og:image:height" content="1000" />
+<meta itemprop="name" content="Video - Taylor Shots" />
+<meta itemprop="url" content="https://taylorshots.mypixieset.com/video/" />
+<meta itemprop="thumbnailUrl" content="https://d11spkgi1ge9lb.cloudfront.net/elementfield/23933001/monumentv-6641a6c7.jpg" />
+<meta name="twitter:title" content="Video - Taylor Shots" />
+<meta name="twitter:image" content="https://d11spkgi1ge9lb.cloudfront.net/elementfield/23933001/monumentv-6641a6c7.jpg" />
+<meta name="twitter:url" content="https://taylorshots.mypixieset.com/video/" />
+<meta name="twitter:card" content="summary" />
+<meta name="description" content="" />
+<style class="js-dom-cleanup">
+			a,
+			.dropdown-menu {
+				-webkit-transition: none !important;
+				-moz-transition: none !important;
+				-ms-transition: none !important;
+				-o-transition: none !important;
+				transition: none !important;
+			}
+		</style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:300,300i,400,400i,600,600i" rel="stylesheet">
+<link href="https://static-pw.pixieset.com/assets/client/css/themes/theme_2.css?id=18877ee5fa02f38bf897" rel="stylesheet">
+</head>
+<body class="theme-theme2">
 <div class="page-container color_scheme-1 accent_color-0 font_theme-1 button_style-2 sticky_header-1">
 <div class="theme-container">
 <div role="header">
@@ -503,8 +63,8 @@
 <div class="collapse navbar-collapse">
 <ul class="navbar-nav site-nav align-items-center m-auto d-none d-lg-flex">
 <div class="theme-two-header__nav-wrapper">
-<a class="theme-two-header__site-title site-title logo-size--small" href="https://taylorshots.mypixieset.com/">
-<img class="logo__img" src="./video_files/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png" a href="taylorshots.com">
+<a class="theme-two-header__site-title site-title logo-size--small" href="/">
+<img class="logo__img" src="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png" a href="taylorshots.com">
 </a>
 <div class="theme-two-header__left-side-nav align-items-center">
 <li class="nav-item">
@@ -526,27 +86,27 @@
 </ul>
 </div>
 </nav>
-<nav class="theme-two-header__navbar navbar navbar-expand-lg navbar-light navbar-default justify-content-center align-items-center container-fluid hidden" id="top-menu" style="display: none;">
+<nav class="theme-two-header__navbar navbar navbar-expand-lg navbar-light navbar-default justify-content-center align-items-center container-fluid hidden" id=top-menu>
 <div class="collapse navbar-collapse">
 <ul class="navbar-nav site-nav align-items-center m-auto d-none d-lg-flex">
 <div class="theme-two-header__nav-wrapper">
-<a class="theme-two-header__site-title site-title logo-size--small" href="https://taylorshots.mypixieset.com/">
-<img class="logo__img" src="./video_files/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png">
+<a class="theme-two-header__site-title site-title logo-size--small" href="/">
+<img class="logo__img" src="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png">
 </a>
 <div class="theme-two-header__left-side-nav align-items-center">
 <li class="nav-item">
-<a href="https://taylorshots.mypixieset.com/photo/" class="site-nav-primary nav-link">Photo</a>
+<a href="/photo/" class="site-nav-primary nav-link">Photo</a>
 </li>
 <li class="nav-item active">
-<a href="https://taylorshots.mypixieset.com/video/" class="site-nav-primary nav-link">Video</a>
+<a href="/video/" class="site-nav-primary nav-link">Video</a>
 </li>
 </div>
 <div class="theme-two-header__right-side-nav align-items-center">
 <li class="nav-item">
-<a href="https://taylorshots.mypixieset.com/collective/" class="site-nav-primary nav-link">Collective</a>
+<a href="/collective/" class="site-nav-primary nav-link">Collective</a>
 </li>
 <li class="nav-item">
-<a href="https://taylorshots.mypixieset.com/about/" class="site-nav-primary nav-link">About</a>
+<a href="/about/" class="site-nav-primary nav-link">About</a>
 </li>
 </div>
 </div>
@@ -554,25 +114,25 @@
 </div>
 </nav>
 <div class="theme-two-header__overlay-nav overlay-nav">
-<a class="overlay-nav__close-link" href="https://taylorshots.mypixieset.com/video/#"><svg class="svg-inline--fa fa-times fa-w-10" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></svg><!-- <i class="fal fa-times"></i> --></a>
+<a class="overlay-nav__close-link" href="#"><i class="fal fa-times"></i></a>
 <ul class="overlay-nav__nav-menu">
 <li>
-<a href="https://taylorshots.mypixieset.com/photo/" class="mobile-menu-nav-primary overlay-nav__nav-item">
+<a href="/photo/" class="mobile-menu-nav-primary overlay-nav__nav-item">
 Photo
 </a>
 </li>
 <li>
-<a href="https://taylorshots.mypixieset.com/video/" class="mobile-menu-nav-primary overlay-nav__nav-item active">
+<a href="/video/" class="mobile-menu-nav-primary overlay-nav__nav-item active">
 Video
 </a>
 </li>
 <li>
-<a href="https://taylorshots.mypixieset.com/collective/" class="mobile-menu-nav-primary overlay-nav__nav-item">
+<a href="/collective/" class="mobile-menu-nav-primary overlay-nav__nav-item">
 Collective
 </a>
 </li>
 <li>
-<a href="https://taylorshots.mypixieset.com/about/" class="mobile-menu-nav-primary overlay-nav__nav-item">
+<a href="/about/" class="mobile-menu-nav-primary overlay-nav__nav-item">
 About
 </a>
 </li>
@@ -581,7 +141,8 @@ About
 <div class="element-container clearfix element-theme2-header-wrapper" id="element-container-B8mOPl">
 <div class="element-container__element">
 <div class="theme-two-header-wrapper">
-<div class="theme-two-header-wrapper__slider slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1680px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1680px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"><div><div class="theme-two-header-wrapper__slide" style="width: 100%; display: inline-block;">
+<div class="theme-two-header-wrapper__slider">
+<div class="theme-two-header-wrapper__slide ">
 <div class="element-container clearfix element-theme2-header" id="element-container-g71mv1">
 <div class="element-container__element">
 <div class="theme-two-header">
@@ -602,16 +163,17 @@ About
 </div>
 </div>
 </div>
-</div></div></div></div></div></div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="theme-two-header__nav-collapsed d-lg-none">
-<a class="site-title logo-size--small" href="https://taylorshots.mypixieset.com/">
-<img class="logo__img" src="./video_files/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png">
+<a class="site-title logo-size--small" href="/">
+<img class="logo__img" src="https://d11spkgi1ge9lb.cloudfront.net/profile/27683/05045f2382341f5313f56b5f051a188781b91a75ff91f88cc29952af68f09fa5.png">
 </a>
-<a class="site-nav-primary navbar-toggler show-nav-overlay" href="https://taylorshots.mypixieset.com/video/#">
-Menu<svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" focusable="false" data-prefix="far" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg><!-- <i class="far fa-bars fa-2x"></i> -->
+<a class="site-nav-primary navbar-toggler show-nav-overlay" href="#">
+Menu<i class="far fa-bars fa-2x"></i>
 </a>
 </div>
 </div>
@@ -646,18 +208,18 @@ Menu<svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" focusab
 <div class="col-12">
 <div class="video-player-banner__background-video video-player-banner__background-media bg-video video-player-banner--size_sm video-player-banner--style_3">
 <div class="bg-video absolute-fill overflow-hidden ">
-<div class="bg-video__fill-container pos-abs w-100 top-50 left-50 translate-50-50" style="min-width: 722.262px;">
-<div tabindex="0" class="plyr plyr--vimeo plyr--video plyr--fullscreen-enabled plyr--muted plyr--ready plyr--stopped"><div class="bg-video__plyr plyr__video-wrapper plyr__video-embed plyr--setup" style="padding-bottom: 56.25%;"><div id="vimeo-7796" style="-webkit-transform: translateY(-35.9375%); -ms-transform: translateY(-35.9375%); transform: translateY(-35.9375%);"><iframe src="./video_files/366504512.html" allowfullscreen="" title="Player for undefined" data-ready="true" tabindex="-1"></iframe></div></div><div class="plyr__controls"></div></div>
+<div class="bg-video__fill-container pos-abs w-100 top-50 left-50 translate-50-50">
+<div class="bg-video__plyr" data-type="vimeo" data-video-id="366504512"></div>
 </div>
-<div class="bg-video__fallback absolute-fill img-bg-cover fade fade_.5" style="background-image: url(&quot;//i.vimeocdn.com/video/822568440_3600.jpg&quot;);"></div>
+<div class="bg-video__fallback absolute-fill img-bg-cover "></div>
 <div class="absolute-fill"></div>
 </div>
 <div class="video-player-banner__tint absolute-fill "></div>
-<div class="video-player-banner__loading-bg banner__loading-bg absolute-fill fade fade_.5"></div>
+<div class="video-player-banner__loading-bg banner__loading-bg absolute-fill"></div>
 <div class="video-player-banner__content-row row">
 <div class="video-player-banner__content-column col-12 col-md-10 offset-md-1">
 <div class="video-player-banner__content-wrapper">
-<span class="video-player-banner__custom-thumbnail-play-btn js-video-player-banner__button order-1 order-lg-0"><svg class="svg-inline--fa fa-play fa-w-14" aria-hidden="true" focusable="true" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg><!-- <i class="fas fa-play"></i> --></span>
+ <span class="video-player-banner__custom-thumbnail-play-btn js-video-player-banner__button order-1 order-lg-0"><i class="fas fa-play"></i></span>
 <div class="video-player-banner__text max-w-900">
 <h1 class="video-player-banner__title hero-text">Down Low (Stripped)</h1>
 <p class="video-player-banner__subtitle subtitle">Lyrah</p>
@@ -686,20 +248,20 @@ Menu<svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" focusab
 <div class="theme-2-footer__icon-links d-flex align-items-center">
 <div class="social-links__column d-flex">
 <a class="social-links__link" href="https://facebook.com/taylorshots.co" target="_blank">
-<svg class="svg-inline--fa fa-facebook-f fa-w-10 social-links__icon social-links__facebook fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="social-links__icon social-links__facebook fab fa-facebook-f fa-fw"></i> -->
+<i class="social-links__icon social-links__facebook fab fa-facebook-f fa-fw"></i>
 </a>
 <a class="social-links__link" href="https://twitter.com/taylorshotsco" target="_blank">
-<svg class="svg-inline--fa fa-twitter fa-w-16 social-links__icon social-links__twitter fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="social-links__icon social-links__twitter fab fa-twitter fa-fw"></i> -->
+<i class="social-links__icon social-links__twitter fab fa-twitter fa-fw"></i>
 </a>
 <a class="social-links__link" href="https://www.instagram.com/taylorshots.co/" target="_blank">
-<svg class="svg-inline--fa fa-instagram fa-w-14 social-links__icon social-links__instagram fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="social-links__icon social-links__instagram fab fa-instagram fa-fw"></i> -->
+<i class="social-links__icon social-links__instagram fab fa-instagram fa-fw"></i>
 </a>
 <a class="social-links__link" href="https://www.youtube.com/channel/UCihyy8LYPu4UMeV1SYqJs0A" target="_blank">
-<svg class="svg-inline--fa fa-youtube fa-w-18 social-links__icon social-links__youtube fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="social-links__icon social-links__youtube fab fa-youtube fa-fw"></i> -->
+<i class="social-links__icon social-links__youtube fab fa-youtube fa-fw"></i>
 </a>
 </div>
-<a href="https://taylorshots.mypixieset.com/video/#" class="go-to-top__link">
-<svg class="svg-inline--fa fa-long-arrow-up fa-w-8 fa-lg" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M3.515 168.97l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L111 92.113V468c0 6.627 5.373 12 12 12h10c6.627 0 12-5.373 12-12V92.113l83.444 83.928c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-116-116.485c-4.686-4.686-12.284-4.686-16.971 0L3.515 152c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg><!-- <i class="fal fa-long-arrow-up fa-lg"></i> -->
+<a href="#" class="go-to-top__link">
+<i class="fal fa-long-arrow-up fa-lg"></i>
 </a>
 </div>
 </div>
@@ -725,11 +287,12 @@ Menu<svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" focusab
 		linkUrl: '',
 	};
 </script>
-<script src="./video_files/manifest.js"></script>
-<script src="./video_files/vendor.js"></script>
-<script src="./video_files/index.js"></script>
-<script src="./video_files/theme_2.js"></script>
-
-
-
-</body><editor-card style="animation: initial; transition: initial; color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-variation-settings: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block-end: initial; border-block-start: initial; border: initial; border-radius: initial; border-collapse: initial; border-inline-end: initial; border-inline-start: initial; bottom: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; content: initial; counter-increment: initial; counter-reset: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphens: initial; image-rendering: initial; inline-size: initial; isolation: initial; left: 0px; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block-end: initial; margin-block-start: initial; margin: initial; margin-inline-end: initial; margin-inline-start: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block-end: initial; padding-block-start: initial; padding: initial; padding-inline-end: initial; padding-inline-start: initial; page: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; right: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-position: initial; top: 0px; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; -webkit-app-region: initial; -webkit-appearance: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-font-size-delta: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-margin-collapse: initial; -webkit-margin-bottom-collapse: initial; -webkit-margin-top-collapse: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-emphasis: initial; -webkit-text-emphasis-position: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: auto;"></editor-card></html>
+<script src="https://static-pw.pixieset.com/assets/client/js/manifest.js?id=cc3c938d3203b863bf04"></script>
+<script src="https://static-pw.pixieset.com/assets/client/js/vendor.js?id=5c16c6155fcd7ca3eddf"></script>
+<script src="https://static-pw.pixieset.com/assets/client/js/index.js?id=7e1c3f672313748594a5"></script>
+<script src="https://static-pw.pixieset.com/assets/client/js/themes/theme_2.js?id=035b036f414eb608f2ec"></script>
+<script class="js-dom-cleanup">
+		PW.i({"s":{"t":{"tk":"theme_2"},"blks":{"theme_2_footer":{"tk":"theme_2_footer","uuid":"ga9wD1","footer_text":"Copyright \u00a9 {year} Taylor Shots Media LLC","footer_style":"0","instagram_graph":{"tk":"instagram_graph","uuid":"gowDwd","title":{"val":null,"child_elements":[]},"style":{"val":"0","child_elements":[],"valueConfig":[{"container":"container--full-width instagram-graph__container--style_1"},{"container":"container-fluid max-w-1200 instagram-graph__container--style_2"},{"container":"container-fluid max-w-1200 instagram-graph__container--style_3"}]},"on_click":{"val":"0","child_elements":[]},"loginUrl":null,"photoswipablePhotos":[{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/71534010_477659386217854_2448812610598462845_n.jpg?_nc_cat=100&_nc_ohc=fuHUXpDxFPAAQmHdd4YeMQldfFo5jPlKh3FV_B79WUenaR1hBceAiO-JQ&_nc_ht=scontent.xx&oh=36e79ed41056d7941c2b29e274b82ce1&oe=5EA532A8","w":1440,"h":1800},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/78817734_461127931217008_8576584238587633400_n.jpg?_nc_cat=107&_nc_ohc=zoEW8jcEqAEAQmzG6jBXsLhhKtx5xfTGuYlZKgsJy41xW_5AObnzGGL3Q&_nc_ht=scontent.xx&oh=6cd01fa08623af5fd8b39ac73372bd3c&oe=5E6EC408","w":1440,"h":1800},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/75362577_1846017905533034_2961790814441277076_n.jpg?_nc_cat=100&_nc_ohc=lmdxBdGuPgwAQm6bIfCrYJtmu8qUGmNmfhOxZ9h9E-kEDFXsiF7v5euPQ&_nc_ht=scontent.xx&oh=bdf8cbdfb8c20aa53b4fa96d587b720c&oe=5EB2B18A","w":1440,"h":1800},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/77414108_123771202041481_218242075487992413_n.jpg?_nc_cat=106&_nc_ohc=2zQkAnmh_q0AQlufUuu3GjMqYmrNvY1Ml6pO-5pjxPxs4CZKeJzD6Oe6g&_nc_ht=scontent.xx&oh=2dfa53c6465403d875c1871c1a12ee01&oe=5E7192C3","w":1440,"h":1799},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/72701490_148777129858594_4084164304308797464_n.jpg?_nc_cat=106&_nc_ohc=WL1bpKP717gAQktwRqGriaLWnRm3Q5wNqvkmV1T-u042tE02WOXTS9_qg&_nc_ht=scontent.xx&oh=f74b077b81e8f139e06dcc3be9b9e807&oe=5E7223A3","w":1440,"h":1799},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/76894796_145210763463067_4318653551577868189_n.jpg?_nc_cat=107&_nc_ohc=zX2auzofmbsAQlMeCTFT6zbqdpjIgvBvmpyGvsdRCL0ar84L7v47SbxKQ&_nc_ht=scontent.xx&oh=f075a3597e8ed21345ee416526c28f09&oe=5EB14450","w":1440,"h":1799},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/72759495_263169837992303_1839722176756118103_n.jpg?_nc_cat=108&_nc_ohc=Gnntuta2QA8AQnscZ2sdnkIswj2GOjePxj78LbRjKNObAaWeM_0cNEdPA&_nc_ht=scontent.xx&oh=4a13e1c9a12cbf781fb4fb040c0514a1&oe=5E699BB3","w":1440,"h":960},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/72747208_694178514422965_4731074843119824134_n.jpg?_nc_cat=109&_nc_ohc=Nofli3O97xMAQlgVELgpsR6qup8C8AiA2FN7tq5gUZTUQ5io7kIv_xEUw&_nc_ht=scontent.xx&oh=913f12b92e7a1f45b8824793b1a058e0&oe=5E6AB96B","w":1440,"h":960},{"src":"https:\/\/scontent.xx.fbcdn.net\/v\/t51.2885-15\/72603529_550612229029805_7112345889083535226_n.jpg?_nc_cat=109&_nc_ohc=tjxJcXZU5OsAQnz8BIih5z5rX0rl3vfKgYRrK5Ox7DbZ15vyZLwkbG2RQ&_nc_ht=scontent.xx&oh=22f7f2729fe9494508bff4b6de7abc05&oe=5E6C79EC","w":1440,"h":960}]},"show_social_links":"1"},"theme_2_header":{"tk":"theme_2_header","uuid":"N1MZY8","logo":"0","banner_size":"2","theme_2_header_wrapper_element":{"tk":"theme_2_header_wrapper","uuid":"B8mOPl","child_elements":{"val":"{\"count\":1,\"defaultValues\":[{\"title\":\"My Portfolio\",\"subtitle\":\"Lorem ipsum dolor sit amet\",\"button_text\":\"\",\"photo_source\":[{\"XS\":\"sample_photos\\\/sample-40_XS.jpg\",\"SM\":\"sample_photos\\\/sample-40_SM.jpg\",\"MD\":\"sample_photos\\\/sample-40_MD.jpg\",\"LG\":\"sample_photos\\\/sample-40_LG.jpg\",\"XL\":\"sample_photos\\\/sample-40_XL.jpg\",\"OR\":\"sample_photos\\\/sample-40_OR.jpg\"}]}]}","child_elements":[{"tk":"theme_2_header","uuid":"g71mv1","photo_source":{"child_elements":[]},"title":{"val":"VIDEO","child_elements":[]},"subtitle":{"val":null,"child_elements":[]},"button_text":{"val":"","child_elements":[]},"button_url":{"val":null,"child_elements":[]},"open_link_in_new_window":{"val":"0","child_elements":[]},"background_tint":{"val":"1","child_elements":[],"valueConfig":["hidden",""]}}],"customData":{"minNumberChildElements":1,"maxNumberChildElements":false}},"auto_play_slides":{"val":"0","child_elements":[]}},"sticky":true,"isDesktop":true},"theme_2_post_footer":{"tk":"theme_2_post_footer","uuid":"2YQWwA"}}},"p":{"type":0,"blks":[{"tk":"single_text","uuid":"NO3m7X","layout":"0","text_with_title":{"tk":"text","uuid":"BA06m1","content":{"val":"<h1 class=\"ql-align-center\">VIDEOS<\/h1>","child_elements":[]}}},{"tk":"video_player_banner","uuid":"B8wkdb","style":"2","video_player_banner_element":{"tk":"video_player_banner","uuid":"B9K68G","style":{"val":"2","child_elements":[],"valueConfig":["video-player-banner--style_1","video-player-banner--style_2","video-player-banner--style_3"]},"oembed_data":{"val":"{\"type\":\"video\",\"version\":\"1.0\",\"provider_name\":\"Vimeo\",\"provider_url\":\"https:\\\/\\\/vimeo.com\\\/\",\"title\":\"Lyrah - Down Low (Stripped)\",\"author_name\":\"Zack Miskie\",\"author_url\":\"https:\\\/\\\/vimeo.com\\\/user104007428\",\"is_plus\":\"0\",\"account_type\":\"basic\",\"html\":\"<iframe src=\\\"https:\\\/\\\/player.vimeo.com\\\/video\\\/366504512?app_id=122963\\\" width=\\\"426\\\" height=\\\"240\\\" frameborder=\\\"0\\\" allow=\\\"autoplay; fullscreen\\\" allowfullscreen title=\\\"Lyrah - Down Low (Stripped)\\\"><\\\/iframe>\",\"width\":426,\"height\":240,\"duration\":81,\"description\":\"\",\"thumbnail_url\":\"https:\\\/\\\/i.vimeocdn.com\\\/video\\\/822568440_295x166.jpg\",\"thumbnail_width\":295,\"thumbnail_height\":166,\"thumbnail_url_with_play_button\":\"https:\\\/\\\/i.vimeocdn.com\\\/filter\\\/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F822568440_295x166.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png\",\"upload_date\":\"2019-10-15 10:27:38\",\"video_id\":366504512,\"uri\":\"\\\/videos\\\/366504512\"}","child_elements":[]},"button_oembed_data":{"val":"{\"type\":\"video\",\"version\":\"1.0\",\"provider_name\":\"Vimeo\",\"provider_url\":\"https:\\\/\\\/vimeo.com\\\/\",\"title\":\"Lyrah - Down Low (Stripped)\",\"author_name\":\"Zack Miskie\",\"author_url\":\"https:\\\/\\\/vimeo.com\\\/user104007428\",\"is_plus\":\"0\",\"account_type\":\"basic\",\"html\":\"<iframe src=\\\"https:\\\/\\\/player.vimeo.com\\\/video\\\/366504512?app_id=122963\\\" width=\\\"426\\\" height=\\\"240\\\" frameborder=\\\"0\\\" allow=\\\"autoplay; fullscreen\\\" allowfullscreen title=\\\"Lyrah - Down Low (Stripped)\\\"><\\\/iframe>\",\"width\":426,\"height\":240,\"duration\":81,\"description\":\"\",\"thumbnail_url\":\"https:\\\/\\\/i.vimeocdn.com\\\/video\\\/822568440_295x166.jpg\",\"thumbnail_width\":295,\"thumbnail_height\":166,\"thumbnail_url_with_play_button\":\"https:\\\/\\\/i.vimeocdn.com\\\/filter\\\/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F822568440_295x166.jpg&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png\",\"upload_date\":\"2019-10-15 10:27:38\",\"video_id\":366504512,\"uri\":\"\\\/videos\\\/366504512\"}","child_elements":[]},"mobile_fallback_photo":{"child_elements":[]},"banner_size":{"val":"2","child_elements":[],"valueConfig":[{"sizeClass":"video-player-banner--size_lg"},{"sizeClass":"video-player-banner--size_md"},{"sizeClass":"video-player-banner--size_sm"}]},"background_type":{"val":"1","child_elements":[]},"video_url":{"val":"https:\/\/vimeo.com\/366504512","child_elements":[],"customData":{"fallbackUrl":"\/\/d2vw2j0fzp6c9l.cloudfront.net\/images\/default-cover-xlarge.jpg","thumbnailUrl":{"standard":"\/\/i.vimeocdn.com\/video\/822568440_1600.jpg","large":"\/\/i.vimeocdn.com\/video\/822568440_3600.jpg"},"mobileFallbackUrl":"\/\/d2vw2j0fzp6c9l.cloudfront.net\/images\/sample_photos\/sample-32_XL.jpg","videoType":"vimeo","videoId":"366504512","videoWidth":426,"videoHeight":240}},"photo_source":{"child_elements":[]},"background_tint":{"val":"1","child_elements":[],"valueConfig":["hidden",""]},"title":{"val":"Down Low (Stripped)","child_elements":[]},"subtitle":{"val":"Lyrah","child_elements":[]},"button_video_url":{"val":"https:\/\/vimeo.com\/366504512","child_elements":[],"customData":{"videoType":"vimeo","videoId":"366504512","videoWidth":426,"videoHeight":240}}}}],"blogCategories":[],"postTags":[],"navUrl":"\/video\/","previewUrl":"\/website\/preview\/video\/"}});
+	</script>
+</body>
+</html>
