@@ -1,0 +1,597 @@
+.mediaViewInfo {
+	--web-view-name: Web 1920 – 2;
+	--web-view-id: Web_1920__2;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1920__2;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Web_1920__2 {
+	position: absolute;
+	width: 1920px;
+	height: 2799px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Web 1920 – 2;
+	--web-view-id: Web_1920__2;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+#simple_logo_dark {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 935px;
+	top: 49px;
+	overflow: visible;
+}
+
+#SHOOT_SETUP {
+	left: 851px;
+	top: 109px;
+	position: absolute;
+	overflow: visible;
+	width: 220px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+
+#YOUR_ESTIMATE_- {
+	left: 770px;
+	top: 199px;
+	position: absolute;
+	overflow: visible;
+	width: 382px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	color: rgba(112,112,112,1);
+}
+
+input[type=text], [type=date], [type=time], [type=tel], [type=button] {
+	width: 530px;
+	height: 98px;
+	font-size: 32px;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	color: rgba(112,112,112,1);
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	border-radius: 60px;
+	background: #f1f1f1;
+}
+
+input[type=number] {
+	width: 150px;
+	height: 90px;
+	font-size: 32px;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	color: rgba(112,112,112,1);
+	margin: 5px 0 22px 0;
+	border: none;
+	border-radius: 60px;
+	background: #f1f1f1;
+}
+
+#Name {
+	position: absolute;
+	width: 530px;
+	height: 98px;
+	left: 695px;
+	top: 386px;
+	overflow: visible;
+}
+
+#name {
+	left: 234px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+#Email {
+	position: absolute;
+	width: 530px;
+	height: 98px;
+	left: 695px;
+	top: 504px;
+	overflow: visible;
+}
+
+#email {
+	left: 234px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+#Phone {
+	position: absolute;
+	width: 530px;
+	height: 98px;
+	left: 695px;
+	top: 622px;
+	overflow: visible;
+}
+
+#phone {
+	left: 239px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+#Date {
+	position: absolute;
+	width: 530px;
+	height: 98px;
+	left: 695px;
+	top: 740px;
+	overflow: visible;
+	background-color: #f1f1f1;
+	border-radius: 60px;
+}
+
+#date {
+	left: 225px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+#Time {
+	position: absolute;
+	width: 530px;
+	height: 98px;
+	left: 695px;
+	top: 860px;
+	overflow: visible;
+	background-color: #f1f1f1;
+	border-radius: 60px;
+}
+
+#start_time {
+	left: 225px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+.dur_buttons{
+  top: 900px;
+  display: flex;
+}
+
+.dur_buttons button {
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+	width: 320px;
+	height: 48px;
+	background: #f1f1f1;
+	float: right;
+}
+
+#Duration{
+	font-family: Azo Sans;
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: center;
+  	width: 530px;
+  	height: 98px;
+  	left: 695px;
+  	top: 980px;
+  	overflow: hidden;
+  	background: #f1f1f1;
+  	padding: 2em 0;
+  	position: absolute;
+  	border-radius: 60px;
+}
+
+#duration {
+	left: 195px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+.Shoot_Location {
+  position: relative;
+  font-family: Azo Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  height: 98px;
+  left: 160px;
+  top: 1100px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 60px;
+  background: #f1f1f1;
+}
+
+.Shoot_Location select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #f1f1f1;
+  
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 40px;
+  width: 0;
+  height: 0;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent gray transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  height: 93px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 40px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#location {
+	left: 220px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+.Shoot_Type {
+  position: relative;
+  font-family: Azo Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  height: 98px;
+  left: 695px;
+  top: 1220px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 60px;
+  background: #f1f1f1;
+}
+
+.Shoot_Type select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #f1f1f1;
+  
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 40px;
+  width: 0;
+  height: 0;
+  color: red;
+  border: 12px solid transparent;
+  border-color: gray transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent gray transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: grey;
+  height: 93px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 40px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#type {
+	left: 225px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+.cam_buttons{
+  top: 1340px;
+  display: flex;
+}
+
+.cam_buttons button {
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+	width: 320px;
+	height: 48px;
+	background: #f1f1f1;
+}
+
+#Cameras{
+	font-family: Azo Sans;
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: center;
+  	width: 530px;
+  	height: 98px;
+  	left: 695px;
+  	top: 1340px;
+  	overflow: hidden;
+  	background: #f1f1f1;
+  	padding: 2em 0;
+  	position: absolute;
+  	border-radius: 60px;
+}
+
+#cameras {
+	left: 200px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	color: rgba(112,112,112,1);
+}
+
+.crew_buttons{
+  display: flex;
+}
+
+.crew_buttons button {
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+	width: 320px;
+	height: 48px;
+	background: #f1f1f1;
+}
+
+
+#Crew{
+	font-family: Azo Sans;
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: center;
+  	width: 530px;
+  	height: 98px;
+  	left: 695px;
+  	top: 1455px;
+  	overflow: hidden;
+  	background: #f1f1f1;
+  	padding: 2em 0;
+  	position: absolute;
+  	border-radius: 60px;
+}
+
+#crew {
+	left: 210px;
+	top: 75px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+
+textarea {
+	position: absolute;
+	width: 530px;
+	height: 98px;
+	left: 695px;
+	top: 1570px; 
+	padding: 15px;
+	font-size: 20px;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: normal;
+	color: rgba(112,112,112,1);
+	display: inline-block;
+	border: none;
+	border-radius: 60px;
+	background: #f1f1f1;
+	max-height: 296px;
+	max-width: 530px;
+	-webkit-transition: height .4s ease-in-out;
+}
+
+textarea:hover {
+	height: 296px;
+}
+
+.button {
+	position: absolute;
+	overflow: visible;
+	width: 220px;
+	height: 98px;
+	top: 1900px;
+	stroke: rgba(3,3,3,0);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	border-radius: 60px;
+	font-family: Azo Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: rgba(112,112,112,1);
+}
+
+.cancel {
+	left: 695px;
+	background-color: rgba(214,119,119,1);;
+}
+
+.cancel:hover {
+	background-color: red;
+}
+
+.submit {
+	left: 1005px;
+	background-color: rgba(170,208,109,1);;
+}
+
+.submit:hover {
+	background-color: green;
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<title>Web 1920 – 2</title>
+<link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+<div id="Web_1920__2"> <!-- Div around entire page -->
+<form action="action_page.php" method="post" id="form1"> <!-- Form around entire page -->
+
+	<img id="simple_logo_dark" src="simple_logo_dark.png" srcset="simple_logo_dark.png 1x, simple_logo_dark@2x.png 2x">
+
+	<div id="SHOOT_SETUP">
+		<span>SHOOT SETUP</span>
+	</div>
+
+	<div id="YOUR_ESTIMATE_-">
+		<span id="estimate">YOUR ESTIMATE</span>
+		<div id="cost">$0</div>
+		<input type="hidden" id="sub_total" value="0"> 
+	</div>
+
+	<div id="Name" class="Name">
+		<input type="text" id="customer" name="customer" placeholder="first, last" required>
+	<div id="name">
+			<span>name</span> 
+		</div>
+	</div>
+
+	<div id="Email" class="Email">
+		<input type="text" id="cust_email" name="cust_email" placeholder="youremail@domain.com" required>
+	
+	<div id="email">
+			<span>email</span> 
+		</div>
+	</div>
+
+	<div id="Phone" class="Phone">
+		<input type="tel" id="xxx_xxx-xxxx" name="xxx_xxx-xxxx" placeholder="(xxx) xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+	
+	<div id="phone">
+			<span>phone</span> 
+		</div>
+	</div>
+
+	<div id="Date" class="Date">
+			<input type="date" id="shoot_date" name="shoot_date" placeholder="01/01/2020" required> 	
+			
+		<div id="date">
+			<span>shoot date</span>
+		</div>
+	</div> 
+
+	<div id="Time" class="Time">
+			<input type="time" id="shoot_time" name="shoot_time" placeholder="12:00pm" required> 
+		
+		<div id="start_time">
+			<span>shoot time</span>
+		</div>
+	</div> 
+
+	<div id="Duration">
+		<div class="dur_buttons">
+			<button name="dur_sub" type="button" onclick="sub_time()">-</button>
+			<span id="Dura"; name="Dura"></span>
+			<button name="dur_add" type="button" onclick="add_time()">+</button>
+		</div>
+
+		<script type="text/javascript">
+			var counter = 0;
+			var temp_total = document.getElementById("sub_total");
+			var est_div = document.getElementById("cost");
+			var span = document.getElementById("Dura");
+			var cam_type = document.getElementById('Media_Type');
+			span.textContent = counter;
+
+			function add_time() {
+				if (cam_type.value == 0){
+					alert("Must choose shoot type first!");
+				}else if (cam_type.value == 1){
+					temp = eval(temp_total.value) + eval(25);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;	
+					counter = counter + 0.5;
+					span.textContent = counter;
+				}else if (cam_type.value == 2){
+					temp = eval(temp_total.value) + eval(50);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;	
+					counter = counter + 0.5;
+					span.textContent = counter;
+				}else{
+					temp = eval(temp_total.value) + eval(75); //Need clarification on what this should be
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;	
+					counter = counter + 0.5;
+					span.textContent = counter;
+				}
+			};
+
+			function sub_time() {
+				if (cam_type.value == 0){
+					alert("Must choose shoot type first!");
+				}else if (counter == 0){
+					counter = 0;
+				}else if (cam_type.value == 1){
+					temp = eval(temp_total.value) - eval(25);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter = counter - 0.5;
+					span.textContent = counter;
+				}else if (cam_type.value == 2){
+					temp = eval(temp_total.value) - eval(50);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter = counter - 0.5;
+					span.textContent = counter;
+				}else{
+					temp = eval(temp_total.value) - eval(75); //Need clarification on what this should be
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter = counter - 0.5;
+					span.textContent = counter;
+				}
+			};
+		</script>
+
+		<div id="duration">
+			<span>shoot duration(hrs)</span> 
+		</div>
+	</div>
+
+	<div class="Shoot_Type" style="width: 530px">
+	  <select name="Media_Type" id="Media_Type">
+	    <option value="0">select</option>
+	    <option value="1">photo</option>
+	    <option value="2">video</option>
+	    <option value="3">photo/video</option>
+	  </select>
+
+		<script type="text/javascript">
+			var x, i, j, l, ll, selElmnt, a, b, c;
+			
+			/*look for any elements with the class "Shoot_Type":*/
+			x = document.getElementsByClassName("Shoot_Type");
+			l = x.length;
+			for (i = 0; i < l; i++) {
+			  selElmnt = x[i].getElementsByTagName("select")[0];
+			  ll = selElmnt.length;
+			  /*for each element, create a new DIV that will act as the selected item:*/
+			  a = document.createElement("DIV");
+			  a.setAttribute("class", "select-selected");
+			  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+			  x[i].appendChild(a);
+			  /*for each element, create a new DIV that will contain the option list:*/
+			  b = document.createElement("DIV");
+			  b.setAttribute("class", "select-items select-hide");
+			  for (j = 1; j < ll; j++) {
+			    /*for each option in the original select element,
+			    create a new DIV that will act as an option item:*/
+			    c = document.createElement("DIV");
+			    c.innerHTML = selElmnt.options[j].innerHTML;
+			    c.addEventListener("click", function(e) {
+			        /*when an item is clicked, update the original select box,
+			        and the selected item:*/
+			        var y, i, k, s, h, sl, yl;
+			        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+			        sl = s.length;
+			        h = this.parentNode.previousSibling;
+			        var old = document.getElementById('Media_Type').options[document.getElementById('Media_Type').selectedIndex].text;
+			        for (i = 0; i < sl; i++) {
+			          if (s.options[i].innerHTML == this.innerHTML) {
+			            s.selectedIndex = i;
+			            h.innerHTML = this.innerHTML;
+			            y = this.parentNode.getElementsByClassName("same-as-selected");
+			            yl = y.length;
+			            for (k = 0; k < yl; k++) {
+			              y[k].removeAttribute("class");
+			            }
+			            this.setAttribute("class", "same-as-selected");
+			            break;
+			          }
+			        }
+			        h.click();
+
+			        /*Here is where it changes the price based on shoot type selected*/
+			        var temp = 0;
+					var temp_total = document.getElementById("sub_total");
+					var est_div = document.getElementById("cost");
+					var cam_selector = document.getElementById('Media_Type');
+			        var selected2 = cam_selector.options[cam_selector.selectedIndex].text;
+			        if (old != "select"){
+			        	if (old == "photo"){
+			        		temp = eval(temp_total.value) - eval(125);
+			        	}else if (old == "video"){
+			        		temp = eval(temp_total.value) - eval(225);
+			        	}else{
+			        		temp = eval(temp_total.value) - eval(350);
+			        	}
+			        	temp_total.value = temp;
+			        }
+
+			        if (selected2 == "photo"){
+			        	temp = eval(temp_total.value) + eval(125);
+			        } else if (selected2 == "video"){
+			        	temp = eval(temp_total.value) + eval(225);
+			        } else {
+			        	temp = eval(temp_total.value) + eval(350);
+			        }
+			        temp_total.value = temp;
+			        est_div.textContent = "$"+temp;
+			    });
+			    b.appendChild(c);
+			  }
+			  x[i].appendChild(b);
+			  a.addEventListener("click", function(e) {
+			      /*when the select box is clicked, close any other select boxes,
+			      and open/close the current select box:*/
+			      e.stopPropagation();
+			      closeAllSelect(this);
+			      this.nextSibling.classList.toggle("select-hide");
+			      this.classList.toggle("select-arrow-active");
+			    });
+			}
+			function closeAllSelect(elmnt) {
+			  /*a function that will close all select boxes in the document,
+			  except the current select box:*/
+			  var x, y, i, xl, yl, arrNo = [];
+			  x = document.getElementsByClassName("select-items");
+			  y = document.getElementsByClassName("select-selected");
+			  xl = x.length;
+			  yl = y.length;
+			  for (i = 0; i < yl; i++) {
+			    if (elmnt == y[i]) {
+			      arrNo.push(i)
+			    } else {
+			      y[i].classList.remove("select-arrow-active");
+			    }
+			  }
+			  for (i = 0; i < xl; i++) {
+			    if (arrNo.indexOf(i)) {
+			      x[i].classList.add("select-hide");
+			    }
+			  }
+			}
+			/*if the user clicks anywhere outside the select box,
+			then close all select boxes:*/
+			document.addEventListener("click", closeAllSelect);
+
+
+		</script> 
+		<div id="type">
+			<span>shoot type</span>
+		</div>
+	</div>
+
+	<div class="Shoot_Location" style="width: 530px">
+		<select name="locations" id="locations">
+			<option value="0">select</option>
+			<option value="1">Colorado - Front Range</option>
+			<option value="2">Colorado - Western Slope</option>
+			<option value="3">Nashville Metro Area</option>
+			<option value="4">Chicago Metro Area</option>
+			<option value="5">California Bay Area</option>
+			<option value="6">Other* (please specify below)</option>
+			<!-- <option>*shoots outside of the listed districts may involve travel fees</option> -->
+		</select>
+
+		<script type="text/javascript">
+			var x, i, j, l, ll, selElmnt, a, b, c;
+			/*look for any elements with the class "Shoot_Location":*/
+			x = document.getElementsByClassName("Shoot_Location");
+			l = x.length;
+			for (i = 0; i < l; i++) {
+			  selElmnt = x[i].getElementsByTagName("select")[0];
+			  ll = selElmnt.length;
+			  /*for each element, create a new DIV that will act as the selected item:*/
+			  a = document.createElement("DIV");
+			  a.setAttribute("class", "select-selected");
+			  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+			  x[i].appendChild(a);
+			  /*for each element, create a new DIV that will contain the option list:*/
+			  b = document.createElement("DIV");
+			  b.setAttribute("class", "select-items select-hide");
+			  for (j = 1; j < ll; j++) {
+			    /*for each option in the original select element,
+			    create a new DIV that will act as an option item:*/
+			    c = document.createElement("DIV");
+			    c.innerHTML = selElmnt.options[j].innerHTML;
+			    c.addEventListener("click", function(e) {
+			        /*when an item is clicked, update the original select box,
+			        and the selected item:*/
+			        var y, i, k, s, h, sl, yl;
+			        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+			        sl = s.length;
+			        h = this.parentNode.previousSibling;
+			        var old = document.getElementById('locations').options[document.getElementById('locations').selectedIndex].text;
+			        for (i = 0; i < sl; i++) {
+			          if (s.options[i].innerHTML == this.innerHTML) {
+			            s.selectedIndex = i;
+			            h.innerHTML = this.innerHTML;
+			            y = this.parentNode.getElementsByClassName("same-as-selected");
+			            yl = y.length;
+			            for (k = 0; k < yl; k++) {
+			              y[k].removeAttribute("class");
+			            }
+			            this.setAttribute("class", "same-as-selected");
+			            break;
+			          }
+			        }
+			        h.click();
+
+			        /*Here is where it changes the price if "other" location selected*/
+			        var temp = 0;
+					var temp_total = document.getElementById("sub_total");
+					var est_div = document.getElementById("cost");
+					var cam_selector = document.getElementById('locations');
+			        var selected2 = cam_selector.options[cam_selector.selectedIndex].text;
+			        if (old == "Other* (please specify below)"){
+			        	temp = eval(temp_total.value) - eval(200);
+			        	temp_total.value = temp;
+			        	est_div.textContent = "$"+temp;
+			        }
+			        
+			        if (selected2 == "Other* (please specify below)"){
+			        	temp = eval(temp_total.value) + eval(200);
+			        	temp_total.value = temp;
+				        est_div.textContent = "$"+temp;
+			        }
+			        
+			    });
+			    b.appendChild(c);
+			  }
+			  x[i].appendChild(b);
+			  a.addEventListener("click", function(e) {
+			      /*when the select box is clicked, close any other select boxes,
+			      and open/close the current select box:*/
+			      e.stopPropagation();
+			      closeAllSelect(this);
+			      this.nextSibling.classList.toggle("select-hide");
+			      this.classList.toggle("select-arrow-active");
+			    });
+			}
+			function closeAllSelect(elmnt) {
+			  /*a function that will close all select boxes in the document,
+			  except the current select box:*/
+			  var x, y, i, xl, yl, arrNo = [];
+			  x = document.getElementsByClassName("select-items");
+			  y = document.getElementsByClassName("select-selected");
+			  xl = x.length;
+			  yl = y.length;
+			  for (i = 0; i < yl; i++) {
+			    if (elmnt == y[i]) {
+			      arrNo.push(i)
+			    } else {
+			      y[i].classList.remove("select-arrow-active");
+			    }
+			  }
+			  for (i = 0; i < xl; i++) {
+			    if (arrNo.indexOf(i)) {
+			      x[i].classList.add("select-hide");
+			    }
+			  }
+			}
+			/*if the user clicks anywhere outside the select box,
+			then close all select boxes:*/
+			document.addEventListener("click", closeAllSelect);
+		</script> 
+		<div id="location">
+			<span style="align-content: center;">shoot location</span>
+		</div>
+	</div>
+
+	<div id="Cameras">
+		<div class="cam_buttons">
+			<button id="cam_sub" type="button" onclick="sub_cam()">-</button>
+			<span id="Cams"; name="Cams";></span>
+			<button id="cam_add" type="button" onclick="add_cam()">+</button>
+		</div>
+
+		<script type="text/javascript">
+			var counter2 = 0;
+			var temp = 0;
+			var temp_total = document.getElementById("sub_total");
+			var est_div = document.getElementById("cost");
+			var cam_type = document.getElementById('Media_Type');
+			var span2 = document.getElementById("Cams");
+			span2.textContent = counter2;
+			
+			function add_cam() {
+				if (cam_type.value == 0){
+					alert("Must choose shoot type first!");
+				}else if (cam_type.value == 1){
+					temp = eval(temp_total.value) + eval(50);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter2 = counter2 + 1;
+					span2.textContent = counter2;
+				}else if (cam_type.value == 2){
+					temp = eval(temp_total.value) + eval(150);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter2 = counter2 + 1;
+					span2.textContent = counter2;
+				}else{
+					temp = eval(temp_total.value) + eval(175); //Need clarification on what this should be
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;	
+					counter2 = counter2 + 1;
+					span2.textContent = counter2;
+				}
+			};
+
+			function sub_cam() {
+				if (cam_type.value == 0){
+					alert("Must choose shoot type first!");
+				}else if (counter2 == 0){
+					counter2 = 0;
+				}else if (cam_type.value == 1){
+					temp = eval(temp_total.value) - eval(50);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter2 = counter2 - 1;
+					span2.textContent = counter2;
+				}else if (cam_type.value == 2){
+					temp = eval(temp_total.value) - eval(150);
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;
+					counter2 = counter2 - 1;
+					span2.textContent = counter2;
+				}else{
+					temp = eval(temp_total.value) - eval(175); //Need clarification on what this should be
+					temp_total.value = temp;
+					est_div.textContent = "$"+temp;	
+					counter2 = counter2 - 1;
+					span2.textContent = counter2;
+				}
+			};			
+		</script>
+
+		<div id="cameras">
+			<span style="font-family: Azo Sans; font-style: normal; font-weight: 100; font-size: 18px;">number of cameras</span> 
+		</div>
+	</div>
+
+	<div id="Crew">
+		<div class="crew_buttons">
+			<button id="crew_sub" type="button" onclick="sub_crew(); ">- </button>
+			<span id="Crew_mems"; name="Crew_mems"></span>
+			<button id="crew_add" type="button" onclick="add_crew(); ">+ </button>
+		</div>
+
+		<script type="text/javascript">
+			var counter3 = 0;
+			var temp_total = document.getElementById("sub_total");
+			var est_div = document.getElementById("cost");
+			var mems_span = document.getElementById("Crew_mems");
+			mems_span.textContent = counter3;
+			
+			function add_crew(){
+				counter3 = counter3 + 1;
+				mems_span.textContent = counter3;
+				var temp = eval(temp_total.value) + eval(25);
+				temp_total.value = temp;
+				est_div.textContent = "$"+temp;
+			};
+
+			function sub_crew(){
+				if (counter3 > 0){
+					counter3 = counter3 - 1;
+					mems_span.textContent = counter3;
+					var temp2 = eval(temp_total.value) - eval(25);
+					temp_total.value = temp2;
+					est_div.textContent = "$"+temp2;
+				}
+			};		
+		</script>
+
+		<div id="crew">
+			<span>crew required</span> 
+		</div>
+	</div>
+
+	<textarea id="extra_comments" name="extra_comments">		use this space to include any other details
+
+</textarea>
+
+
+	<button type="reset" class="button cancel">cancel</button>
+	<button type="submit" class="button submit">submit</button> 
+
+</form>
+</div>
+</body>
+</html>
